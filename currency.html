@@ -9,9 +9,9 @@
 </head>
 <body>
   <h1>Exchange Rates</h1>
-  <form action="https://api.exchangeratesapi.io/" method="get">
+  <form action="https://api.exchangeratesapi.io/latest?" method="get" id="exchange-form">
     <label for="base">Base : </label>
-    <input type="number" min="0" name="baseAmount">
+    <input type="number" min="0" name="baseAmount" id="baseAmount">
     <select name="base" id="base">
       <option value="CAD">CAD</option>
       <option value="HKD">HKD</option>
@@ -85,6 +85,10 @@
     </select>
     <button id="exchange-rates">Convert</button>
   </form>
+
+  <div class="show-rates">
+    <h1 class="result"></h1>
+  </div>
   <!-- <script src="http://openexchangerates.github.io/money.js/money.min.js"></script> -->
   <script src="money.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

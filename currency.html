@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Converter And Currency</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Exchange Rates</h1>
+  <form action="https://api.exchangeratesapi.io/" method="get">
+    <label for="base">Base : </label>
+    <input type="number" min="0" name="baseAmount">
+    <select name="base" id="base">
+      <option value="CAD">CAD</option>
+      <option value="HKD">HKD</option>
+      <option value="ISK">ISK</option>
+      <option value="PHP">PHP</option>
+      <option value="DKK">DKK</option>
+      <option value="HUF">HUF</option>
+      <option value="CZK">CZK</option>
+      <option value="GBP">GBP</option>
+      <option value="RON">RON</option>
+      <option value="SEK">SEK</option>
+      <option value="IDR">IDR</option>
+      <option value="INR">INR</option>
+      <option value="BRL">BRL</option>
+      <option value="RUB">RUB</option>
+      <option value="HRK">HRK</option>
+      <option value="JPY">JPY</option>
+      <option value="THB">THB</option>
+      <option value="CHF">CHF</option>
+      <option value="EUR">EUR</option>
+      <option value="MYR">MYR</option>
+      <option value="BGN">BGN</option>
+      <option value="TRY">TRY</option>
+      <option value="CNY">CNY</option>
+      <option value="NOK">NOK</option>
+      <option value="NZD">NZD</option>
+      <option value="ZAR">ZAR</option>
+      <option value="USD">USD</option>
+      <option value="MXN">MXN</option>
+      <option value="SGD">SGD</option>
+      <option value="AUD">AUD</option>
+      <option value="ILS">ILS</option>
+      <option value="KRW">KRW</option>
+      <option value="PLN">PLN</option>
+    </select>
+    <label for="convert">Convert to</label>
+    <select name="convert" id="convert">
+      <option value="CAD">CAD</option>
+      <option value="HKD">HKD</option>
+      <option value="ISK">ISK</option>
+      <option value="PHP">PHP</option>
+      <option value="DKK">DKK</option>
+      <option value="HUF">HUF</option>
+      <option value="CZK">CZK</option>
+      <option value="GBP">GBP</option>
+      <option value="RON">RON</option>
+      <option value="SEK">SEK</option>
+      <option value="IDR">IDR</option>
+      <option value="INR">INR</option>
+      <option value="BRL">BRL</option>
+      <option value="RUB">RUB</option>
+      <option value="HRK">HRK</option>
+      <option value="JPY">JPY</option>
+      <option value="THB">THB</option>
+      <option value="CHF">CHF</option>
+      <option value="EUR">EUR</option>
+      <option value="MYR">MYR</option>
+      <option value="BGN">BGN</option>
+      <option value="TRY">TRY</option>
+      <option value="CNY">CNY</option>
+      <option value="NOK">NOK</option>
+      <option value="NZD">NZD</option>
+      <option value="ZAR">ZAR</option>
+      <option value="USD">USD</option>
+      <option value="MXN">MXN</option>
+      <option value="SGD">SGD</option>
+      <option value="AUD">AUD</option>
+      <option value="ILS">ILS</option>
+      <option value="KRW">KRW</option>
+      <option value="PLN">PLN</option>
+    </select>
+    <button id="exchange-rates">Convert</button>
+  </form>
+  <!-- <script src="http://openexchangerates.github.io/money.js/money.min.js"></script> -->
+  <script src="money.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

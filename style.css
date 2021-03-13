@@ -1,0 +1,63 @@
+:root{
+  --padding-container: 3% 5%;
+  --text-center: center;
+  --d-flex: flex;
+}
+
+.exRatesTitle, #exchange-form{
+  padding: var(--padding-container);
+}
+
+.exRatesTitle{
+  text-align: var(--text-center);
+}
+
+.form-er{
+  display: var(--d-flex);
+  align-items: center;
+  justify-content: center;
+}
+
+#exchange-form{
+  display: grid;
+  width: 400px;
+  height: 100px;
+  grid-gap: 6px;
+  grid-template-areas: 
+  'bl ba ba ba b b'
+  'cl c c . . .'
+  '. . erBtn erBtn . .';
+}
+
+.base-label{
+  grid-column: 1 / span 1;
+  grid-area: bl;
+}
+
+#baseAmount{
+  grid-column: 2 / span 2;
+  grid-area: ba;
+}
+
+#base{
+  grid-area: b;
+}
+
+.convertTo-label{
+  grid-area: cl;
+}
+
+#convert{
+  grid-area: c;
+}
+
+#exchange-rates{
+  grid-area: erBtn;
+}
+
+.show-rates{
+  display: var(--d-flex);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

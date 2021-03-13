@@ -4,6 +4,8 @@
   --d-flex: flex;
 }
 
+/* currency page styles */
+
 .exRatesTitle, #exchange-form{
   padding: var(--padding-container);
 }
@@ -61,3 +63,5 @@
   align-items: center;
   flex-direction: column;
 }
+
+/* coverter page styles */

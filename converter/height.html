@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Height Converter</title>
+</head>
+<body class="height-container">
+  <h1>Height Converter</h1>
+  <form action="/height" method="post" class="height-form">
+    <label for="baseHeightMeasurement">Value to convert</label>
+    <input type="number" min="0" name="baseHeightMeasurement" id="baseHeightMeasurement" step=".01">
+    <select name="heightBase" id="heightBase">
+      <option value="KM">Kilometer (KM)</option>
+      <option value="HM">Hectometer (HM)</option>
+      <option value="DAM">Decameter (DAM)</option>
+      <option value="M">Meter (M)</option>
+      <option value="DM">Decimeter (DM)</option>
+      <option value="CM">Centimeter (CM)</option>
+      <option value="MM">Millimeter (MM)</option>
+      <option value="YD">Yard (YD)</option>
+      <option value="NMi">Nautical Mile (NMi)</option>
+      <option value="FT">Foot (FT)</option>
+      <option value="MI">Mile (MI)</option>
+      <option value="IN">Inch (IN)</option>
+    </select>
+    <label for="resultHeightMeasurement">Result</label>
+    <input type="number" name="resultHeightMeasurement" id="resultHeightMeasurement" min="0" step=".01">
+    <select name="heightResult" id="heightResult">
+      <option value="KM">Kilometer (KM)</option>
+      <option value="HM">Hectometer (HM)</option>
+      <option value="DAM">Decameter (DAM)</option>
+      <option value="M">Meter (M)</option>
+      <option value="DM">Decimeter (DM)</option>
+      <option value="CM">Centimeter (CM)</option>
+      <option value="MM">Millimeter (MM)</option>
+      <option value="YD">Yard (YD)</option>
+      <option value="NMi">Nautical Mile (NMi)</option>
+      <option value="FT">Foot (FT)</option>
+      <option value="MI">Mile (MI)</option>
+      <option value="IN">Inch (IN)</option>
+    </select>
+    <button class="convert-height">Convert</button>
+  </form>
+  <script src="../converter.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area Converter</title>
+</head>
+<body class="area-container">
+  <h1>Area Converter</h1>
+  <form action="/area" method="post" class="area-form">
+    <label for="areaBase">Value to convert</label>
+    <input type="number" min="0" step=".01" name="areaBaseInput" id="areaBaseInput">
+    <select name="areaBase" id="areaBase">
+      <option value="KM2">Square Kilometer (KM^2)</option>
+      <option value="M2">Square Meter (M^2)</option>
+      <option value="DM2">Square Decimeter (DM^2)</option>
+      <option value="CM2">Square Centimeter (CM^2)</option>
+      <option value="MM2">Square Millimeter (MM^2)</option>
+      <option value="HA">Hectare (HA)</option>
+      <option value="AC">Acre (AC)</option>
+      <option value="MI2">Square Mile (MI^2)</option>
+      <option value="FT2">Square Foot (FT^2)</option>
+      <option value="IN2">Square Inch (IN^2)</option>
+      <option value="YD2">Square Yard (YD^2)</option>
+    </select>
+    <label for="areaResultInput">Convert to</label>
+    <input type="number" min="0" step=".01" name="areaResultInput" id="areaResultInput">
+    <select name="areaResult" id="areaResult">
+      <option value="KM2">Square Kilometer (KM^2)</option>
+      <option value="M2">Square Meter (M^2)</option>
+      <option value="DM2">Square Decimeter (DM^2)</option>
+      <option value="CM2">Square Centimeter (CM^2)</option>
+      <option value="MM2">Square Millimeter (MM^2)</option>
+      <option value="HA">Hectare (HA)</option>
+      <option value="AC">Acre (AC)</option>
+      <option value="MI2">Square Mile (MI^2)</option>
+      <option value="FT2">Square Foot (FT^2)</option>
+      <option value="IN2">Square Inch (IN^2)</option>
+      <option value="YD2">Square Yard (YD^2)</option>
+    </select>
+    <button class="btn-convert-area">Convert</button>
+  </form>
+  <script src="../js-converter/areaConverter.js"></script>
+</body>
+</html>

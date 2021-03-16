@@ -229,39 +229,39 @@ class ConvertArea {
     const fromUnit = this.baseUnit;
     const toUnit = this.resultUnit;
 
-    switch (fromUnit === 'KM2') {
+    switch (fromUnit === 'HA') {
       case (toUnit === 'KM2'):
-        resultInput.value = baseInput.value;
+        resultInput.value = baseInput.value * 0.01;
         break;
       case (toUnit === 'M2'):
-        resultInput.value = baseInput.value * 1000000;
+        resultInput.value = baseInput.value * 10000;
         break;
       case (toUnit === 'DM2'):
-        resultInput.value = baseInput.value * 100000000;
+        resultInput.value = baseInput.value * 1000000;
         break;
       case (toUnit === 'CM2'):
-        resultInput.value = baseInput.value * 10000000000;
+        resultInput.value = baseInput.value * 100000000;
         break;
       case (toUnit === 'MM2'):
-        resultInput.value = baseInput.value * 1000000000000;
+        resultInput.value = baseInput.value * 10000000000;
         break;
       case (toUnit === 'HA'):
-        resultInput.value = baseInput.value * 100;
+        resultInput.value = baseInput.value;
         break;
       case (toUnit === 'AC'):
-        resultInput.value = baseInput.value * 247.10538147;
+        resultInput.value = baseInput.value * 2.4710538147;
         break;
       case (toUnit === 'MI2'):
-        resultInput.value = baseInput.value * 0.3861021585;
+        resultInput.value = baseInput.value * 0.0038610216;
         break;
       case (toUnit === 'FT2'):
-        resultInput.value = baseInput.value * 10763910.417;
+        resultInput.value = baseInput.value * 107639.10417;
         break;
       case (toUnit === 'IN2'):
-        resultInput.value = baseInput.value * 1550003100;
+        resultInput.value = baseInput.value * 15500031;
         break;
       case (toUnit === 'YD2'):
-        resultInput.value = baseInput.value * 1195990.0463;
+        resultInput.value = baseInput.value * 11959.900463;
         break;
       default:
         break;

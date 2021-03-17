@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Converter</title>
+</head>
+<body class="speed-container">
+  <h1>Speed Converter</h1>
+  <form action="/speed" method="post" class="speed-form">
+    <label for="speedBase">Value to convert</label>
+    <input type="number" min="0" step=".01" name="speedBaseInput" id="speedBaseInput">
+    <select name="speedBase" id="speedBase">
+      <option value="VL">Velocity of Light</option>
+      <option value="KMH">Kilometer / hour (Km/h)</option>
+      <option value="MH">Mile / hour (Mi/h)</option>
+      <option value="MS">Meter / second (M/s)</option>
+      <option value="KT">Knot (Kt)</option>
+    </select>
+    <label for="speedResultInput">Convert to</label>
+    <input type="number" min="0" step=".01" name="speedResultInput" id="speedResultInput">
+    <select name="speedResult" id="speedResult">
+      <option value="VL">Velocity of Light</option>
+      <option value="KMH">Kilometer / hour (Km/h)</option>
+      <option value="MH">Mile / hour (Mi/h)</option>
+      <option value="MS">Meter / second (M/s)</option>
+      <option value="KT">Knot (Kt)</option>
+    </select>
+    <button id="btn-convert-speed">Convert</button>
+  </form>
+  <script src="../js-converter/speedConverter.js"></script>
+</body>
+</html>

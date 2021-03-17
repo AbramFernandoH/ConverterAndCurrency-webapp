@@ -4,7 +4,7 @@ const baseUnit = document.querySelector('#volumeBase');
 const resultInput = document.querySelector('#volumeResultInput');
 const resultUnit = document.querySelector('#volumeResult');
 
-class convertVolume {
+class ConvertVolume {
   constructor(baseUnit, resultUnit){
     this.baseUnit = baseUnit;
     this.resultUnit = resultUnit;
@@ -225,7 +225,7 @@ btnConvertVolume.addEventListener('click', function(evt) {
     return
   }
 
-  const volume = new convertVolume(baseUnit.value, resultUnit.value);
+  const volume = new ConvertVolume(baseUnit.value, resultUnit.value);
 
   switch (baseUnit.value) {
     case 'M3':

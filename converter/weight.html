@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weight Converter</title>
+</head>
+<body class="weight-converter">
+  <h1>Weight Converter</h1>
+  <form action="/weight" method="post" class="weight-form">
+    <label for="weightBase">Value to convert</label>
+    <input type="number" min="0" step=".01" name="weightBaseInput" id="weightBaseInput">
+    <select name="weightBase" id="weightBase">
+      <option value="T">Ton (Metric) (T)</option>
+      <option value="KG">Kilogram (Kg)</option>
+      <option value="G">Gram (G)</option>
+      <option value="MG">Milligram (Mg)</option>
+      <option value="CT">Carat (Ct)</option>
+      <option value="OZ">Ounce (Oz)</option>
+      <option value="LBS">Pound (Lbs)</option>
+    </select>
+    <label for="weightResultInput">Convert to</label>
+    <input type="number" min="0" step=".01" name="weightResultInput" id="weightResultInput">
+    <select name="weightResult" id="weightResult">
+      <option value="T">Ton (Metric) (T)</option>
+      <option value="KG">Kilogram (Kg)</option>
+      <option value="G">Gram (G)</option>
+      <option value="MG">Milligram (Mg)</option>
+      <option value="CT">Carat (Ct)</option>
+      <option value="OZ">Ounce (Oz)</option>
+      <option value="LBS">Pound (Lbs)</option>
+    </select>
+    <button id="btn-convert-weight">Convert</button>
+  </form>
+  <script src="../js-converter/weightConverter.js"></script>
+</body>
+</html>

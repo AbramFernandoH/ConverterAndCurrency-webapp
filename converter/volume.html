@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volume Converter</title>
+</head>
+<body class="volume-container">
+  <h1>Volume Converter</h1>
+  <form action="/volume" method="post" class="volume-form">
+    <label for="volumeBase">Value to convert</label>
+    <input type="number" min="0" step=".01" name="volumeBaseInput" id="volumeBaseInput">
+    <select name="volumeBase" id="volumeBase">
+      <option value="M3">Cubic Meter (M^3)</option>
+      <option value="CM3">Cubic Centimeter (CM^3)</option>
+      <option value="FT3">Cubic Foot (FT^3)</option>
+      <option value="L">Liter (L)</option>
+      <option value="ML">Milliliter (ML)</option>
+      <option value="OZ">Fluid Ounce (US) (OZ)</option>
+    </select>
+    <label for="volumeResultInput">Convert to</label>
+    <input type="number" min="0" step=".01" name="volumeResultInput" id="volumeResultInput">
+    <select name="volumeResult" id="volumeResult">
+      <option value="M3">Cubic Meter (M^3)</option>
+      <option value="CM3">Cubic Centimeter (CM^3)</option>
+      <option value="FT3">Cubic Foot (FT^3)</option>
+      <option value="L">Liter (L)</option>
+      <option value="ML">Milliliter (ML)</option>
+      <option value="OZ">Fluid Ounce (US) (OZ)</option>
+    </select>
+    <button id="btn-convert-volume">Convert</button>
+  </form>
+  <script src="../js-converter/volumeConverter.js"></script>
+</body>
+</html>

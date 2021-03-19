@@ -16,31 +16,31 @@ class ConvertWeight {
 
     switch (fromUnit === 'T') {
       case (toUnit === 'T'):
-        
+        resultInput.value = baseInput.value;
         break;
     
       case (toUnit === 'KG'):
-        
+        resultInput.value = baseInput.value * 1000;
         break;
     
       case (toUnit === 'G'):
-        
+        resultInput.value = baseInput.value * 1000000;
         break;
     
       case (toUnit === 'MG'):
-        
+        resultInput.value = baseInput.value * 1000000000;
         break;
     
       case (toUnit === 'CT'):
-        
+        resultInput.value = baseInput.value * 5000000;
         break;
     
       case (toUnit === 'OZ'):
-        
+        resultInput.value = baseInput.value * 35273.96195;
         break;
     
       case (toUnit === 'LBS'):
-        
+        resultInput.value = baseInput.value * 2204.6226218;
         break;
     
       default:

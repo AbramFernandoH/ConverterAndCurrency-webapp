@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+</head>
+<body class="temperature-converter">
+  <h1>Temperature Converter</h1>
+  <form action="/temperature" method="post" class="temperature-form">
+    <label for="temperatureBase">Value to convert</label>
+    <input type="number" min="0" step=".01" name="temperatureBaseInput" id="temperatureBaseInput">
+    <select name="temperatureBase" id="temperatureBase">
+      <option value="C">Celcius (°C)</option>
+      <option value="F">Fahrenheit (°F)</option>
+      <option value="K">Kelvin (K)</option>
+      <option value="R">Reaumur (°r)</option>
+    </select>
+    <label for="temperatureResultInput">Convert to</label>
+    <input type="number" min="0" step=".01" name="temperatureResultInput" id="temperatureResultInput">
+    <select name="temperatureResult" id="temperatureResult">
+      <option value="C">Celcius (°C)</option>
+      <option value="F">Fahrenheit (°F)</option>
+      <option value="K">Kelvin (K)</option>
+      <option value="R">Reaumur (°r)</option>
+    </select>
+    <button id="btn-convert-temperature">Convert</button>
+  </form>
+  <script src="../js-converter/temperatureConverter.js"></script>
+</body>
+</html>
